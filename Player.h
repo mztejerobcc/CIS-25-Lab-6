@@ -11,7 +11,7 @@ class Player {
         int attackPower;
 
     public:
-    // constructors
+    // constructors 
     Player();
     Player(std::string name, int health, int attackPower);
     ~Player();
