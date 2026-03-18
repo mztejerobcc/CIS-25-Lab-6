@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Inventory.h"
 
 #ifndef PLAYER_H
 #define PLAYER_H
@@ -9,6 +10,7 @@ class Player {
         int health;
         int maxHealth;
         int attackPower;
+        Inventory inventory;
 
     public:
     // constructors 
@@ -26,6 +28,8 @@ class Player {
     void takeDamage(int damage);
     void displayStatus();
 
+    void showInventory() const;
+    void addItem(const Item& item);
 };
 
 #endif
